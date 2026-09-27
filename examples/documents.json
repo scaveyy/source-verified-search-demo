@@ -1,0 +1,23 @@
+[
+  {
+    "source_id": "POL-101",
+    "title": "Expense approval guide",
+    "version": "2026-01",
+    "allowed_groups": ["staff", "finance"],
+    "body": "Expenses under $200 need a team lead approval.\nExpenses of $200 or more need a finance approval.\nKeep the receipt with the request."
+  },
+  {
+    "source_id": "POL-102",
+    "title": "Document review guide",
+    "version": "2026-02",
+    "allowed_groups": ["staff", "finance"],
+    "body": "A draft document must show its source before approval.\nIf the source is missing, send the draft for manual review."
+  },
+  {
+    "source_id": "POL-900",
+    "title": "Board planning note",
+    "version": "2026-01",
+    "allowed_groups": ["board"],
+    "body": "The board-only strategy is reviewed at the next board meeting."
+  }
+]
