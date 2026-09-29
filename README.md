@@ -34,8 +34,10 @@ flowchart LR
 
 The 14 tests cover these checks, including changed sources, forged excerpts, denied access, malformed input, and repeatable ranking. GitHub Actions runs the same tests on each push and pull request.
 
-## What this does not prove
+## Scope
 
-This is a local example, not a deployed service. The `--group` option is supplied by whoever runs the command. It is **not** a login or an access control system for real files. The digest catches a changed document body during this check; it does not prove who wrote the document or create a secure audit trail.
+A local example with fictional documents. `--group` stands in for a real login, and ranking is simple word overlap, not semantic search.
 
-Search uses word overlap, not semantic retrieval. There is no language model or answer checker. The demo shows one way to keep a search result tied to a source. It makes no claim about another project's code, security, or results.
+## How this maps to a production build
+
+I build internal search where every result links back to its source and restricted material is access-controlled. Production code and data stay private; this repo shows the core rule (no verifiable source, no answer) in a form anyone can run.
